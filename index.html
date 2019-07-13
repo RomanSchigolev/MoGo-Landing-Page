@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 <!--    <link rel="stylesheet" href="css/animate.min.css">-->
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400" rel="stylesheet">
@@ -1197,10 +1198,24 @@
 		C270.138,174.729,244.833,199.193,214.245,199.193z"/>
 
 </svg>
-                <h2><a class="map__link" href="https://goo.gl/maps/nGcfybSLqKHWHu5GA" target="_blank">Open map</a></h2>
+                <button type="button" class="map__link__open" data-open-modal="#modal">Open map</button>
             </div>
         </div>
     </div>
+
+    <div id="modal" class="modal">
+        <iframe class="modal__content__maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3A75218166ef232291ecd37246205f5d684ef3d38a48501145c2fdf17136f93dc9&amp;source=constructor"></iframe>
+        <button type="button" class="button__close__modal" data-close-modal="#modal">
+            <svg class="close__modal__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve">
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312
+		c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312
+		l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937
+		c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z"/>
+</svg>
+        </button>
+    </div>
+    <div class="modal__overlay"></div>
 
     <footer class="footer">
         <div class="container">
@@ -1411,19 +1426,12 @@
             </div>
             <div class="footer__copyright">
                 <div class="copyright__title">
-                    &copy 2016 MoGo free PSD template by <span>Laaqiq</span>
+                    &copy; 2016 MoGo free PSD template by <span>Laaqiq</span>
                 </div>
             </div>
         </div>
     </footer>
 </main>
-
-&copy;
-
-<!--<script src="js/wow.min.js"></script>-->
-<!--<script>-->
-<!--    new WOW().init();-->
-<!--</script>-->
 <script src="js/main.js"></script>
 </body>
 </html>
