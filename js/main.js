@@ -16,7 +16,7 @@ function toggleAccordion() {
 }
 buttons.forEach(accordion__header => accordion__header.addEventListener('click', toggleAccordion));
 
-//PopUp Map
+//Pop-Up Map
 const openModalButtons = document.querySelectorAll('[data-open-modal]');
 const closeModalButtons = document.querySelectorAll('[data-close-modal]');
 const overlay = document.querySelector('.modal__overlay');
@@ -53,6 +53,7 @@ function openModal(modal) {
         modals.forEach(modal => {
             if (event.key === "Escape"){
                 closeModal(modal);
+                event.preventDefault();
             }
         });
     }
@@ -68,7 +69,7 @@ function closeModal(modal) {
 }
 
 
-// WORK IT
+// WORK IT Burger-Menu
 // const menuSlide = () => {
 //     const burger = document.querySelector('.menu__burger');
 //     const menu = document.querySelector('.menu__list');
