@@ -4,7 +4,7 @@
 @media only screen and (max-width : 1200px){
 
     .blog__list {
-        grid-template-columns: minmax(290px, 600px);
+        grid-template-columns: minmax(200px, 500px);
         justify-content: center;
         grid-row-gap: 30px;
     }
@@ -12,22 +12,27 @@
 
 
 /* Medium Devices, Desktops */
+
+@media only screen and (max-width : 992px)and (orientation : landscape){
+
+    .intro {
+        margin-top: 40px;
+    }
+
+    .intro__slider{
+        visibility: hidden;
+    }
+}
+
 @media only screen and (max-width : 992px){
-    
+
     .menu{
         display: none;
     }
 
-    .intro__subtitle {
-        font-size: 60px;
-    }
-
-    .intro__title {
-        font-size: 116px;
-    }
-
-    .intro__link {
-        padding: 9px 20px;
+    .burger{
+        visibility: visible;
+        position: static;
     }
 
     .slide__item {
@@ -44,10 +49,6 @@
 
     .section__title::after {
         width: 40px;
-    }
-
-    .card {
-        margin-top: 50px;
     }
 
     .card__text__title{
@@ -106,17 +107,18 @@
     }
 
     .accordion__header__icon {
-        width: 30px;
-        height: 30px;
+        width: 4vmax;
     }
 
     .accordion__header__title {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .accordion__header__arrow {
         border-bottom: 3px solid #cccccc;
         border-right: 3px solid #cccccc;
+        width: 15px;
+        height: 15px;
     }
 
     .testimonials__btn--prev {
@@ -210,8 +212,12 @@
     }
 
     .footer__list {
-        grid-template-columns: 1fr;
-        grid-row-gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    .footer__social{
+        grid-column: 1/-1;
     }
 
     .footer__logo {
@@ -245,35 +251,15 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
 
-    .intro__subtitle {
-        font-size: 50px;
-    }
-
-    .intro__title {
-        font-size: 99px;
-    }
-
-    .intro__link {
-        padding: 8px 15px;
-    }
-
     .slide__item__num {
-        display: none;
-    }
-
-    .slide__item__section {
-        font-size: 14px;
+        visibility: hidden;
+        position: absolute;
     }
 
     .card {
-        flex-wrap: wrap;
+        grid-template-columns: minmax(200px, 400px);
+        grid-row-gap: 30px;
         justify-content: center;
-    }
-
-    .card__item {
-        width: 100%;
-        max-width: 410px;
-        margin-bottom: 30px;
     }
 
     .stat__count {
@@ -285,7 +271,7 @@
     }
 
     .services__list {
-        display: block;
+        flex-direction: column;
     }
 
     .services__item {
@@ -361,20 +347,12 @@
         grid-column: 1/-1;
     }
 
-    .blog__list {
-        grid-template-columns: 400px;
+    .footer__list {
+        grid-template-columns: minmax(200px, 600px);
     }
 }
 
 @media only screen and (min-width : 480px) and (max-width: 600px) {
-
-    .intro__subtitle {
-        font-size: 40px;
-    }
-
-    .intro__title {
-        font-size: 75px;
-    }
 
 }
 
@@ -382,16 +360,8 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
 
-    .logo__link {
-        font-size: 25px;
-    }
-
-    .intro__subtitle {
-        font-size: 35px;
-    }
-
-    .intro__title {
-        font-size: 60px;
+    .intro__slider{
+        visibility: hidden;
     }
 
     .clients__item {
@@ -450,10 +420,6 @@
         grid-column: initial;
     }
 
-    .blog__list {
-        grid-template-columns: 310px;
-    }
-
     .blog__item__date {
         padding: 10px 10px;
     }
@@ -471,26 +437,34 @@
         height: 4.5vh;
     }
 
+    .subscribe__form {
+        max-width: 100%;
+        flex-wrap: wrap
+    }
+
+    .subscribe__input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .subscribe__btn {
+        width: 100%;
+        padding: 13px 15px;
+    }
+
+    .publication__content{
+        display: grid;
+        grid-template-columns: minmax(auto, 400px);
+        justify-content: flex-start;
+    }
+
+    .content__text{
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (min-width : 320px) and (max-width: 390px) {
-
-    .logo__link {
-        font-size: 20px;
-    }
-
-    .intro__subtitle {
-        font-size: 30px;
-    }
-
-    .intro__title {
-        font-size: 50px;
-    }
-
-    .intro__link {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
 
     .slide__item__section {
         display: none;
@@ -522,7 +496,7 @@
     }
 
     .accordion__header__title {
-        font-size: 11px;
+        font-size: 9px;
     }
 
     .accordion__header__arrow {
@@ -538,8 +512,8 @@
         font-size: 14px;
     }
 
-    .blog__list {
-        grid-template-columns: 280px;
+    .blog__item__title {
+        font-size: 13px;
     }
 
     .follow__list{
@@ -557,20 +531,6 @@
         margin-right: 0;
     }
 
-    .subscribe__form {
-        flex-wrap: wrap;
-    }
-
-    .subscribe__input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .subscribe__btn {
-        width: 40%;
-        padding: 13px 15px;
-    }
-
     .publication__link__title {
         font-size: 11px;
         line-height: 1.6;
@@ -584,6 +544,34 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){
+
+    .header{
+        min-height: 568px;
+    }
+
+    .follow__list{
+        flex-wrap: wrap;
+    }
+
+    .follow--action {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .follow__item {
+        width: 12%;
+        margin-right: 0;
+    }
+
+    .publication__link__title {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .copyright__title {
+        font-size: 12px;
+    }
 
 }
 
@@ -619,4 +607,10 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px){
 
+}
+
+@media only screen and (min-width: 1400px){
+    .intro__inner{
+        max-width: 78.9vw;
+    }
 }
