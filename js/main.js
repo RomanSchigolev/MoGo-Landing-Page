@@ -68,24 +68,30 @@ function closeModal(modal) {
     document.onkeydown = null;
 }
 
+// Mobile Menu
+const burgerButton = document.querySelector('.burger');
+const menu = document.querySelector('.menu__list');
 
-// WORK IT Burger-Menu
-// const menuSlide = () => {
-//     const burger = document.querySelector('.menu__burger');
-//     const menu = document.querySelector('.menu__list');
-//     const menuItem = document.querySelectorAll('.menu__item');
-//
-//     burger.addEventListener('click', () =>{
-//         menu.classList.toggle('menu__active');
-//
-//         menuItem.forEach((link, index) => {
-//             if (link.style.animation) {
-//                 link.style.animation = '';
-//             } else {
-//                 link.style.animation = `menuItemFade 0.5s ease forwards ${index / 3 + 0.3}s`;
-//             }
-//         });
-//     });
-// }
-//
-// menuSlide();
+function mobileMenu(){
+    burgerButton.addEventListener('click', () => {
+        menu.classList.toggle('menu__list--active');
+        burgerButton.classList.toggle('burger--active');
+    });
+}
+mobileMenu();
+
+// Fixed Header (max-width: 992px)
+const intro = document.querySelector('.intro');
+const header = document.querySelector('.header');
+
+function fixedHeader() {
+    if (window.scrollY >= intro.offsetHeight){
+        header.classList.add('header--fixed');
+        document.querySelector('.logo__link').style.fontSize = '3.3vmax';
+    }
+    else{
+        header.classList.remove('header--fixed');
+        document.querySelector('.logo__link').style.fontSize = '2.3vmax';
+    }
+}
+window.addEventListener('scroll', fixedHeader);
