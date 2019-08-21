@@ -1,20 +1,20 @@
 //Accordion
 const accordion = document.querySelector('.service__accordion');
-const items = accordion.querySelectorAll('.accordion__item');
-const buttons = accordion.querySelectorAll('.accordion__header');
+const accordionItems = accordion.querySelectorAll('.accordion__item');
+const accordionButtons = accordion.querySelectorAll('.accordion__header');
 
 function toggleAccordion() {
     const thisItem = this.parentNode;
 
-    items.forEach(item =>{
-        if (thisItem == item){
+    accordionItems.forEach(item =>{
+        if (thisItem === item){
             thisItem.classList.toggle('open');
             return;
         }
         item.classList.remove('open');
     });
 }
-buttons.forEach(accordion__header => accordion__header.addEventListener('click', toggleAccordion));
+accordionButtons.forEach(accordion__header => accordion__header.addEventListener('click', toggleAccordion));
 
 //Pop-Up Map
 const openModalButtons = document.querySelectorAll('[data-open-modal]');
@@ -95,3 +95,12 @@ function fixedHeader() {
     }
 }
 window.addEventListener('scroll', fixedHeader);
+
+
+//Testimonial slider
+//
+// const slideItem = document.querySelectorAll('.section--gray .testimonials__item');
+// const sliderButtonLeft = document.querySelector('.section--gray .testimonials__btn--prev');
+// const sliderButtonRight = document.querySelector('.section--gray .testimonials__btn--next');
+//
+// let currentItem = 0;

@@ -215,7 +215,7 @@ html{
     position: relative;
     text-decoration: none;
     color: #fff;
-    font-size: 1.2vmax;
+    font-size: 1.1vmax;
     font-weight: 700;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -816,6 +816,11 @@ html{
 .testimonials__list{
     padding: 0 110px;
     position: relative;
+    overflow: hidden;
+}
+
+.testimonials__items{
+    position: relative;
 }
 
 .testimonials__item{
@@ -873,7 +878,7 @@ html{
     border-right: 4px solid #ccc;
     width: 20px;
     height: 20px;
-    left: 0;
+    left: 5px;
     border-radius: 4px;
     transform: rotate(-135deg);
 }
@@ -883,7 +888,7 @@ html{
     border-left: 4px solid #ccc;
     width: 20px;
     height: 20px;
-    right: 0;
+    right: 5px;
     border-radius: 4px;
     transform: rotate(-135deg);
 }
