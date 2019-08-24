@@ -774,6 +774,7 @@ html{
     color: #333;
     margin-left: 15px;
     text-transform: uppercase;
+    max-width: 250px;
 }
 
 .accordion__header__arrow{
@@ -1234,13 +1235,13 @@ html{
 
 /*Footer*/
 .footer{
-    padding-top: 70px;
     background-color: #f8f8f8;
 }
 
 .footer__list{
     grid-template-columns: 1fr 1fr minmax(270px, auto);
     grid-column-gap: 30px;
+    padding: 70px 0;
 }
 
 .footer__logo{
@@ -1450,7 +1451,6 @@ input.subscribe__input:focus {
 .footer__copyright{
     border-top: 1px solid #e5e5e5;
     padding: 20px 0;
-    margin-top: 70px;
 }
 
 .copyright__title{

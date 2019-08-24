@@ -15,8 +15,22 @@
 
 @media only screen and (max-width : 992px)and (orientation : landscape){
 
+    .menu__list{
+        flex-direction: row !important;
+    }
+
     .intro__slider{
         visibility: hidden;
+    }
+
+    .button__close__modal {
+        top: 2.5vmax;
+        right: -7vmax
+    }
+
+    .close__modal__icon {
+        width: 4.5vw;
+        height: 4.5vh;
     }
 }
 
@@ -334,6 +348,7 @@
 
 
 /* Small Devices, Tablets */
+
 @media only screen and (max-width : 768px){
 
     .slide__item__num {
@@ -434,6 +449,7 @@
 
     .footer__list {
         grid-template-columns: minmax(200px, 600px);
+        padding: 40px 0;
     }
 }
 
@@ -444,6 +460,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
+
+    .section{
+        padding: 40px 0;
+    }
+
+    .section__devices{
+        padding: 40px 0 0;
+    }
 
     .intro__slider{
         visibility: hidden;
