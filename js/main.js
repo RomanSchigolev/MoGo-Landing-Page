@@ -104,3 +104,11 @@ window.addEventListener('scroll', fixedHeader);
 // const sliderButtonRight = document.querySelector('.section--gray .testimonials__btn--next');
 //
 // let currentItem = 0;
+
+let footerSocial = document.querySelector('.footer__social');
+
+function fadeInLeft() { 
+    console.log(footerSocial.offsetTop, window.scrollY);
+ }
+
+ window.addEventListener('scroll', fadeInLeft);
