@@ -95,20 +95,3 @@ function fixedHeader() {
     }
 }
 window.addEventListener('scroll', fixedHeader);
-
-
-//Testimonial slider
-//
-// const slideItem = document.querySelectorAll('.section--gray .testimonials__item');
-// const sliderButtonLeft = document.querySelector('.section--gray .testimonials__btn--prev');
-// const sliderButtonRight = document.querySelector('.section--gray .testimonials__btn--next');
-//
-// let currentItem = 0;
-
-let footerSocial = document.querySelector('.footer__social');
-
-function fadeInLeft() { 
-    console.log(footerSocial.offsetTop, window.scrollY);
- }
-
- window.addEventListener('scroll', fadeInLeft);
