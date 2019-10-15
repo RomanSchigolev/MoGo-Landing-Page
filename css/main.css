@@ -21,6 +21,10 @@ a, a:hover, button, button:hover, .anime{
     cursor: pointer;
 }
 
+a:focus{
+    outline: auto;
+}
+
 hr{
     border: 0;
     width: 100%;
@@ -875,7 +879,6 @@ html{
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    outline: none;
 }
 
 .testimonials__btn--prev{
@@ -1167,7 +1170,6 @@ html{
     text-transform: uppercase;
     font-size: 24px;
     border: none;
-    outline: none;
 }
 
 .map__link__open:hover{
@@ -1333,11 +1335,9 @@ input.subscribe__input:focus {
 }
 
 .subscribe__btn{
-    width: 40%;
     padding: 15px 30px;
     background-color: #95e1d3;
     border: none;
-    outline: none;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
