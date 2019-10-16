@@ -823,12 +823,9 @@ html{
 
 /*Testimonials*/
 .testimonials__list{
+    padding: 0 110px;
     position: relative;
     overflow: hidden;
-}
-
-.testimonials__list .slick-slider{
-    padding: 0 110px;
 }
 
 .testimonials__items{
@@ -876,7 +873,7 @@ html{
     margin-right: 10px;
 }
 
-.slick-arrow{
+.testimonials__btn{
     display: block;
     font-size: 0;
     background-color: transparent;
@@ -887,7 +884,7 @@ html{
     z-index: 1;
 }
 
-.slick-prev{
+.testimonials__btn--prev{
     border-top: 4px solid #ccc;
     border-right: 4px solid #ccc;
     width: 20px;
@@ -897,7 +894,7 @@ html{
     transform: rotate(-135deg);
 }
 
-.slick-next{
+.testimonials__btn--next{
     border-bottom: 4px solid #ccc;
     border-left: 4px solid #ccc;
     width: 20px;
@@ -1064,7 +1061,7 @@ html{
 }
 
 .blog__item:hover .blog__item__img img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .blog__item:hover .blog__item__title{
@@ -1351,8 +1348,12 @@ input.subscribe__input:focus {
     transition: all 0.2s linear;
 }
 
+.subscribe__btn:hover{
+    background-color: #81cec0;
+}
+
 .subscribe__btn:active {
-    background-color: #8bd2c5;
+    background-color: #75c2b4;
 }
 
 .publication__title{
