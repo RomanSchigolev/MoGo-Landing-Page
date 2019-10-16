@@ -19,6 +19,10 @@
         flex-direction: row !important;
     }
 
+    .menu__link{
+        font-size: 1.3vmax;
+    }
+
     .intro__slider{
         visibility: hidden;
     }
@@ -220,11 +224,6 @@
         height: 15px;
     }
 
-    .testimonials__btn--prev {
-        border-top: 3px solid #ccc;
-        border-right: 3px solid #ccc;
-    }
-
     .testimonials__item {
         text-align: center;
         padding-left: 0;
@@ -386,7 +385,7 @@
         display: none;
     }
 
-    .testimonials__list {
+    .testimonials__list .slick-slider {
         padding: 0 40px;
     }
 
