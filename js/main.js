@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       item.classList.remove('open');
     });
   }
+
   accordionButtons.forEach(accordion__header => accordion__header.addEventListener('click', toggleAccordion));
 
   //Pop-Up Map
@@ -79,6 +80,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       burgerButton.classList.toggle('burger--active');
     });
   }
+
   mobileMenu();
 
   // Fixed Header (max-width: 992px)
@@ -89,12 +91,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (window.scrollY >= intro.offsetHeight) {
       header.classList.add('header--fixed');
       document.querySelector('.logo__link').style.fontSize = '3.3vmax';
-    }
-    else {
+    } else {
       header.classList.remove('header--fixed');
       document.querySelector('.logo__link').style.fontSize = '2.3vmax';
     }
   }
+
   window.addEventListener('scroll', fixedHeader);
 
   //Slider
@@ -145,7 +147,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     event.stopPropagation();
     if (counter >= sliderItems.length - 1) {  // In order to repeated and quick clicking on the "forward" button the slider work correctly, otherwise you will see a "void"
       return;
-    } counter++;
+    }
+    counter++;
     animationSlider(sliderList, sliderItemWidth, counter);
   }, false);
 
@@ -162,15 +165,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
       sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
     }
 
-      if (sliderItems[counter].id === 'lastClone-2') {
-          sliderList.style.transition = 'none';
-          counter = sliderItems.length - 2;
-          sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
-      }
-      if (sliderItems[counter].id === 'firstClone-2') {
-          sliderList.style.transition = 'none';
-          counter = sliderItems.length - counter;
-          sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
-      }
+    if (sliderItems[counter].id === 'lastClone-2') {
+      sliderList.style.transition = 'none';
+      counter = sliderItems.length - 2;
+      sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
+    }
+    if (sliderItems[counter].id === 'firstClone-2') {
+      sliderList.style.transition = 'none';
+      counter = sliderItems.length - counter;
+      sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
+    }
   });
 });
