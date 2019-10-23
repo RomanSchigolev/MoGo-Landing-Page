@@ -656,7 +656,7 @@ html{
 }
 
 .stat__title{
-    font-size: 14px;
+    font-size: 1.1vmax;
     text-transform: uppercase;
 }
 
@@ -810,7 +810,7 @@ html{
 }
 
 .accordion__content__text{
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Roboto' ,sans-serif;
     font-style: italic;
     line-height: 24px;

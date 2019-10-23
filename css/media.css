@@ -4,7 +4,7 @@
 @media only screen and (max-width : 1200px){
 
     .blog__list {
-        grid-template-columns: minmax(200px, 500px);
+        grid-template-columns: minmax(200px, 600px);
         justify-content: center;
         grid-row-gap: 30px;
     }
@@ -20,7 +20,7 @@
     }
 
     .menu__link{
-        font-size: 1.3vmax;
+        font-size: 1.4vmax;
     }
 
     .intro__slider{
@@ -61,12 +61,13 @@
         height: 100vh;
         width: 100%;
         top: 0;
-        left: 0;
+        right: 0;
         z-index: 6;
+        transform: translateX(100%);
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: black;
+        background: linear-gradient(to bottom, #f38181, #fce38a);
         visibility: hidden;
         opacity: 0;
         transition: all 0.4s linear;
@@ -75,6 +76,7 @@
     .menu__list--active{
         opacity: 1;
         visibility: visible;
+        transform: translateX(0);
     }
 
     .menu__list--active .menu__item{
@@ -85,6 +87,10 @@
         margin-right: 0;
         opacity: 0;
         transition: all 0.4s ease;
+    }
+
+    .menu__link{
+        font-size: 1.5vmax;
     }
 
     .menu__link::after{
@@ -136,6 +142,11 @@
     .burger{
         visibility: visible;
         position: static;
+    }
+
+    .intro__link{
+        font-size: 2vmax;
+        padding: 1.1vmax 2vmax;
     }
 
     .slide__item {
