@@ -17,5 +17,5 @@ $(document).ready(function() {
   //   $('burger').removeClass('burger--active');
   //   $('.menu__list').hide();
   //   $('burger').removeClass('active');
-  // });
+// });
 });

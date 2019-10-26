@@ -172,17 +172,5 @@ document.addEventListener('DOMContentLoaded', function (event) {
       counter = sliderItems.length - counter;
       sliderList.style.transform = "translateX(".concat(-sliderItemWidth * counter, "px)");
     }
-
-    if (sliderItems[counter].id === 'lastClone-2') {
-      sliderList.style.transition = 'none';
-      counter = sliderItems.length - 2;
-      sliderList.style.transform = "translateX(".concat(-sliderItemWidth * counter, "px)");
-    }
-
-    if (sliderItems[counter].id === 'firstClone-2') {
-      sliderList.style.transition = 'none';
-      counter = sliderItems.length - counter;
-      sliderList.style.transform = "translateX(".concat(-sliderItemWidth * counter, "px)");
-    }
   });
 });
