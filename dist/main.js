@@ -1,6 +1,6 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function (event) {
+(function () {
   //Accordion
   var accordion = document.querySelector('.service__accordion');
   var accordionItems = accordion.querySelectorAll('.accordion__item');
@@ -101,76 +101,63 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   window.addEventListener('scroll', fixedHeader); //Slider
 
-  var sliderList = document.querySelector('.testimonials__items');
-  var sliderItems = sliderList.querySelectorAll('.testimonials__item');
-  var sliderItemWidth = sliderItems[0].getBoundingClientRect().width; // Find out the width of the element
-
-  var buttonPrev = document.querySelector('.testimonials__btn--prev');
-  var buttonNext = document.querySelector('.testimonials__btn--next');
-  var counter = 1; // counter of elements
-
-  sliderList.style.transform = "translateX(".concat(-sliderItemWidth * counter, "px)"); // Initially let's move to the next element
-
-  var animationSlider = function animationSlider(slider, itemWidth, itemIndex) {
+  /*
+  const sliderList = document.querySelector('.testimonials__items');
+  const sliderItems = sliderList.querySelectorAll('.testimonials__item');
+  const sliderItemWidth = sliderItems[0].getBoundingClientRect().width; // Find out the width of the element
+    const buttonPrev = document.querySelector('.testimonials__btn--prev');
+  const buttonNext = document.querySelector('.testimonials__btn--next');
+    let counter = 1; // counter of elements
+  sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`; // Initially let's move to the next element
+    const animationSlider = (slider, itemWidth, itemIndex) => {
     slider.style.transition = 'transform 0.5s ease-in';
-    slider.style.transform = "translateX(".concat(-itemWidth * itemIndex, "px)");
+    slider.style.transform = `translateX(${(-itemWidth) * itemIndex}px)`;
   };
-
-  buttonPrev.addEventListener('click', function (event) {
-    if (counter <= 0) {
-      // In order to repeated and quick clicking on the "back" button the slider work correctly, otherwise you will see a "void"
+    buttonPrev.addEventListener('click', (event) => {
+    if (counter <= 0) { // In order to repeated and quick clicking on the "back" button the slider work correctly, otherwise you will see a "void"
       return;
     }
-
     counter--;
     animationSlider(sliderList, sliderItemWidth, counter);
   });
-  buttonNext.addEventListener('click', function (event) {
-    if (counter >= sliderItems.length - 1) {
-      // In order to repeated and quick clicking on the "forward" button the slider work correctly, otherwise you will see a "void"
+    buttonNext.addEventListener('click', (event) => {
+    if (counter >= sliderItems.length - 1) {  // In order to repeated and quick clicking on the "forward" button the slider work correctly, otherwise you will see a "void"
       return;
     }
-
     counter++;
     animationSlider(sliderList, sliderItemWidth, counter);
   });
-  buttonPrev.addEventListener('touchstart', function (event) {
+    buttonPrev.addEventListener('touchstart', (event) => {
     event.preventDefault();
     event.stopPropagation();
-
-    if (counter <= 0) {
-      // In order to repeated and quick clicking on the "back" button the slider work correctly, otherwise you will see a "void"
+    if (counter <= 0) {  // In order to repeated and quick clicking on the "back" button the slider work correctly, otherwise you will see a "void"
       return;
     }
-
     counter--;
     animationSlider(sliderList, sliderItemWidth, counter);
-  }, false); // For mobile device
-
-  buttonNext.addEventListener('touchstart', function (event) {
+  }, false);
+    // For mobile device
+  buttonNext.addEventListener('touchstart', (event) => {
     event.preventDefault();
     event.stopPropagation();
-
-    if (counter >= sliderItems.length - 1) {
-      // In order to repeated and quick clicking on the "forward" button the slider work correctly, otherwise you will see a "void"
+    if (counter >= sliderItems.length - 1) {  // In order to repeated and quick clicking on the "forward" button the slider work correctly, otherwise you will see a "void"
       return;
     }
-
     counter++;
     animationSlider(sliderList, sliderItemWidth, counter);
-  }, false); // After animation
-
-  sliderList.addEventListener('transitionend', function (event) {
+  }, false);
+    // After animation
+  sliderList.addEventListener('transitionend', (event) => {
     if (sliderItems[counter].id === 'lastClone') {
       sliderList.style.transition = 'none';
       counter = sliderItems.length - 2;
-      sliderList.style.transform = "translateX(".concat(-sliderItemWidth * counter, "px)");
+      sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
     }
-
     if (sliderItems[counter].id === 'firstClone') {
       sliderList.style.transition = 'none';
       counter = sliderItems.length - counter;
-      sliderList.style.transform = "translateX(".concat(-sliderItemWidth * counter, "px)");
+      sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
     }
   });
-});
+  */
+})();
