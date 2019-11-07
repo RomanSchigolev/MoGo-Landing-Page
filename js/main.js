@@ -73,6 +73,7 @@
     // Mobile Menu
     const burgerButton = document.querySelector('.burger');
     const menu = document.querySelector('.menu__list');
+    const menuLinks = menu.querySelectorAll('.menu__link');
 
     function mobileMenu() {
       burgerButton.addEventListener('click', () => {
@@ -83,7 +84,16 @@
 
     mobileMenu();
 
-    // Fixed Header (max-width: 992px)
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+      burgerButton.classList.remove('burger--active');
+      menu.classList.remove('menu__list--active');
+    });
+  });
+
+
+  // Fixed Header (max-width: 992px)
     const intro = document.querySelector('.intro');
     const header = document.querySelector('.header');
 
@@ -168,3 +178,4 @@
     });
    */
 })();
+

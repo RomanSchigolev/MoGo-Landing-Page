@@ -76,6 +76,7 @@
 
   var burgerButton = document.querySelector('.burger');
   var menu = document.querySelector('.menu__list');
+  var menuLinks = menu.querySelectorAll('.menu__link');
 
   function mobileMenu() {
     burgerButton.addEventListener('click', function () {
@@ -84,7 +85,14 @@
     });
   }
 
-  mobileMenu(); // Fixed Header (max-width: 992px)
+  mobileMenu();
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      burgerButton.classList.remove('burger--active');
+      menu.classList.remove('menu__list--active');
+    });
+  }); // Fixed Header (max-width: 992px)
 
   var intro = document.querySelector('.intro');
   var header = document.querySelector('.header');
