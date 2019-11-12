@@ -200,7 +200,7 @@ html{
     font-size: 2.3vmax;
     font-weight: 700;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 /*Menu*/
@@ -221,7 +221,7 @@ html{
 .menu__link{
     position: relative;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.1vmax;
     font-weight: 700;
     -webkit-transition: all 0.2s linear;
@@ -266,7 +266,7 @@ html{
 
 .menu__user__cart,
 .menu__user__search{
-    fill: #fff;
+    fill: #ffffff;
     width: 1.4vmax;
     cursor: pointer;
     -webkit-transition: fill 0.2s linear;
@@ -367,7 +367,7 @@ html{
 .intro__subtitle{
     font-family: 'Kaushan Script', cursive;
     font-size: 6vmin;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 2vmax;
 }
 
@@ -375,7 +375,7 @@ html{
     font-size: 14vmin;
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     line-height: 1;
 }
 
@@ -384,17 +384,17 @@ html{
     display: block;
     width: 7vw;
     height: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 4vmax auto;
 }
 
 .intro__link{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 700;
     font-size: 1.5vmax;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     padding: 1.1vmin 2vmin;
     text-transform: uppercase;
     -webkit-transition: all 0.2s linear;
@@ -404,7 +404,7 @@ html{
 }
 
 .intro__link:hover{
-    background-color: #fff;
+    background-color: #ffffff;
     color: #000;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -425,10 +425,10 @@ html{
     position: relative;
     width: 22%;
     padding: 20px 0;
-    border-top: 3px solid #fff;
+    border-top: 3px solid #ffffff;
     opacity: 0.6;
     font-size: 18px;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
@@ -548,7 +548,7 @@ html{
     text-transform: uppercase;
     text-align: center;
     opacity: 0;
-    color: #fff;
+    color: #ffffff;
     transition: opacity 0.3s linear;
     z-index: 2;
     position: absolute;
@@ -568,7 +568,7 @@ html{
 }
 
 .card__content__icon{
-    fill: #fff;
+    fill: #ffffff;
     height: 3vmax;
     width: 3vmax;
 }
@@ -592,7 +592,7 @@ html{
 }
 
 .social__item:hover .social__item__icon{
-    fill: #fff;
+    fill: #ffffff;
     transform: scale(1.3);
 }
 
@@ -641,7 +641,7 @@ html{
     flex: 1 1 0;
     border-left: 1px solid #b5eae0;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     padding: 60px 20px;
 }
 
@@ -685,14 +685,14 @@ html{
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #333;
+    color: #333333;
 }
 
 .services__item__text {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
-    color: #999;
+    color: #999999;
 }
 
 /*Devices*/
@@ -747,7 +747,7 @@ html{
 
 .accordion__item{
     list-style: none;
-    border: 1px solid #eee;
+    border: 1px solid #eeeeee;
     margin-bottom: 15px;
 }
 
@@ -774,7 +774,7 @@ html{
 .accordion__header__title{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+    color: #333333;
     margin-left: 15px;
     text-transform: uppercase;
     max-width: 250px;
@@ -861,7 +861,7 @@ html{
 .testimonials__item__author{
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
-    color: #000;
+    color: #000000;
 }
 
 .testimonials__item__author::before{
@@ -886,8 +886,8 @@ html{
 }
 
 .testimonials__btn--prev{
-    border-top: 4px solid #ccc;
-    border-right: 4px solid #ccc;
+    border-top: 4px solid #cccccc;
+    border-right: 4px solid #cccccc;
     width: 20px;
     height: 20px;
     left: 5px;
@@ -896,8 +896,8 @@ html{
 }
 
 .testimonials__btn--next{
-    border-bottom: 4px solid #ccc;
-    border-left: 4px solid #ccc;
+    border-bottom: 4px solid #cccccc;
+    border-left: 4px solid #cccccc;
     width: 20px;
     height: 20px;
     right: 5px;
@@ -929,7 +929,7 @@ html{
     align-content: center;
     padding: 20px;
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     position: relative;
 }
@@ -948,7 +948,7 @@ html{
 .work__item__content__icon{
     width: 40px;
     height: 40px;
-    fill: #fff;
+    fill: #ffffff;
     margin-bottom: 10px;
 }
 
@@ -1023,7 +1023,7 @@ html{
 .clients__item__name{
     display: block;
     font-size: 14px;
-    color: #333;
+    color: #333333;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -1034,7 +1034,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 300;
-    color: #333;
+    color: #333333;
 }
 
 .clients__item__prof::after {
@@ -1071,7 +1071,7 @@ html{
 
 .blog__link{
     text-decoration: none;
-    color: #333;
+    color: #333333;
 }
 
 .blog__item__header{
@@ -1090,7 +1090,7 @@ html{
 }
 
 .blog__item__date{
-    color: #fff;
+    color: #ffffff;
     background-color: #95e1d3;
     text-align: center;
     position: absolute;
@@ -1125,7 +1125,7 @@ html{
 .blog__item__text{
     font-family: 'Roboto', sans-serif;
     line-height: 1.8;
-    color: #999;
+    color: #999999;
 }
 
 .blog__item__stat{
@@ -1133,7 +1133,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
-    color: #999;
+    color: #999999;
 }
 
 .blog__item__stat span.blog__stat__view{
@@ -1257,7 +1257,7 @@ html{
 .footer__logo{
     font-size: 46px;
     font-weight: 700;
-    color: #ccc;
+    color: #cccccc;
     margin-bottom: 40px;
 }
 
@@ -1270,14 +1270,14 @@ html{
 .footer__social__stat{
     padding-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
 }
 
 .stat__num{
     font-size: 18px;
     font-weight: 700;
-    color: #333;
+    color: #333333;
     margin-right: 5px;
 }
 
@@ -1324,13 +1324,13 @@ html{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
-    color: #ccc;
+    color: #cccccc;
     outline: none;
     transition: all 0.2s linear;
 }
 
 .subscribe__input::placeholder{
-    color: #ccc;
+    color: #cccccc;
 }
 
 input.subscribe__input:focus {
@@ -1342,7 +1342,7 @@ input.subscribe__input:focus {
     padding: 15px 30px;
     background-color: #95e1d3;
     border: none;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
@@ -1360,7 +1360,7 @@ input.subscribe__input:focus {
 .publication__title{
     text-transform: uppercase;
     margin-bottom: 40px;
-    color: #333;
+    color: #333333;
     font-size: 14px;
 }
 
@@ -1382,7 +1382,7 @@ input.subscribe__input:focus {
 
 .publication__link{
     text-decoration: none;
-    color: #333;
+    color: #333333;
 }
 
 .publication__content__photo{
@@ -1403,7 +1403,7 @@ input.subscribe__input:focus {
 }
 
 .publication__link__date{
-    color: #ccc;
+    color: #cccccc;
     font-style: italic;
     font-weight: 300;
     font-size: 13px;
@@ -1435,14 +1435,14 @@ input.subscribe__input:focus {
 
 .instagram__title{
     margin-bottom: 40px;
-    color: #333;
+    color: #333333;
     text-transform: uppercase;
     font-size: 14px;
 }
 
 .instagram__more{
     margin-top: 20px;
-    color: #ccc;
+    color: #cccccc;
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
@@ -1457,7 +1457,7 @@ input.subscribe__input:focus {
 
 .instagram__more:hover{
     text-decoration: underline;
-    color: #333;
+    color: #333333;
 }
 
 .footer__copyright{
@@ -1467,7 +1467,7 @@ input.subscribe__input:focus {
 
 .copyright__title{
     text-align: center;
-    color: #333;
+    color: #333333;
     font-size: 14px;
 }
 

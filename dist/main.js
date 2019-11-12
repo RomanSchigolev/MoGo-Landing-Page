@@ -26,18 +26,18 @@
   var closeModalButtons = document.querySelectorAll('[data-close-modal]');
   var overlay = document.querySelector('.modal__overlay');
   openModalButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (event) {
       var modal = document.querySelector(button.dataset.openModal);
       openModal(modal);
     });
   });
   closeModalButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (event) {
       var modal = button.closest('.modal');
       closeModal(modal);
     });
   });
-  overlay.addEventListener('click', function () {
+  overlay.addEventListener('click', function (event) {
     var modals = document.querySelectorAll('.modal.active');
     modals.forEach(function (modal) {
       closeModal(modal);
@@ -45,7 +45,7 @@
   });
 
   function openModal(modal) {
-    if (modal == null) {
+    if (modal === null) {
       return;
     }
 
@@ -64,7 +64,7 @@
   }
 
   function closeModal(modal) {
-    if (modal == null) {
+    if (modal === null) {
       return;
     }
 
@@ -79,7 +79,7 @@
   var menuLinks = menu.querySelectorAll('.menu__link');
 
   function mobileMenu() {
-    burgerButton.addEventListener('click', function () {
+    burgerButton.addEventListener('click', function (event) {
       menu.classList.toggle('menu__list--active');
       burgerButton.classList.toggle('burger--active');
     });
