@@ -145,7 +145,7 @@
         padding: 1.1vmax 2vmax;
     }
 
-    .slide__item {
+    .intro__slider__item {
         width: 20%;
     }
 
@@ -191,16 +191,16 @@
         padding-left: 75px;
     }
 
-    .services__item__icon {
+    .services__icon {
         width: 30px;
         height: 30px;
     }
 
-    .services__item__title {
+    .services__title {
         font-size: 13px
     }
 
-    .services__item__text {
+    .services__text {
         font-size: 13px;
     }
 
@@ -208,11 +208,11 @@
         margin-top: 60px;
     }
 
-    .service__left__side {
+    .service__left {
         display: none;
     }
 
-    .service__right__side {
+    .service__right {
         width: 100%;
     }
 
@@ -237,16 +237,16 @@
         padding: 0 40px;
     }
 
-    .testimonials__item__text{
+    .testimonials__text{
         margin-left: 0;
         margin-top: 20px;
     }
 
-    .testimonials__item__text blockquote {
+    .testimonials__review blockquote {
         font-size: 17px
     }
 
-    .testimonials__item__author {
+    .testimonials__author {
         font-size: 21px;
     }
 
@@ -312,7 +312,7 @@
         padding: 0 50px 0 190px;
     }
 
-    .clients__item__photo {
+    .clients__photo {
         width: 125px;
         height: 125px
     }
@@ -356,7 +356,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
 
-    .slide__item__num {
+    .intro__slider__num {
         visibility: hidden;
         position: absolute;
     }
@@ -480,16 +480,16 @@
         text-align: center;
     }
 
-    .clients__item__photo {
+    .clients__photo {
         position: static;
         margin: 0 auto;
     }
 
-    .clients__item__name {
+    .clients__name {
         margin-top: 15px;
     }
 
-    .clients__item__prof::after {
+    .clients__prof::after {
         margin: 20px auto;
     }
 
@@ -530,11 +530,11 @@
         grid-column: initial;
     }
 
-    .blog__item__date {
+    .blog__date {
         padding: 10px 10px;
     }
 
-    .blog__item__date--day {
+    .blog__date--day {
         font-size: 21px;
     }
 
@@ -576,7 +576,7 @@
 
 @media only screen and (min-width : 320px) and (max-width: 390px) {
 
-    .slide__item__section {
+    .intro__slider__section {
         display: none;
     }
 
@@ -610,15 +610,15 @@
         height: 15px;
     }
 
-    .testimonials__item__text blockquote {
+    .testimonials__review {
         font-size: 14px;
     }
 
-    .clients__item__text {
+    .clients__text {
         font-size: 14px;
     }
 
-    .blog__item__title {
+    .blog__title {
         font-size: 13px;
     }
 

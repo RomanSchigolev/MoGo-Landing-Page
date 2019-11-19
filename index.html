@@ -29,16 +29,16 @@
   <div class="container">
     <div class="header__inner main_flex__nowrap flex__jcontent_between flex__align-items_center">
       <div class="logo">
-        <span class="logo__link">MoGo</span>
+        <a href="#" class="logo__link">MoGo</a>
       </div>
       <nav class="menu">
         <ul class="menu__list main_flex__nowrap">
-          <li class="menu__item"><a class="menu__link" href="#section__about" data-scroll="#section__about">About</a>
+          <li class="menu__item"><a class="menu__link" href="#about" data-scroll="#about">About</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section__services" data-scroll="#section__services">Services</a></li>
-          <li class="menu__item"><a class="menu__link" href="#section__blog" data-scroll="#section__blog">Blog</a></li>
-          <li class="menu__item"><a class="menu__link" href="#section__work" data-scroll="#section__work">Work</a></li>
+            <a class="menu__link" href="#section__services" data-scroll="#services">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#blog" data-scroll="#blog">Blog</a></li>
+          <li class="menu__item"><a class="menu__link" href="#work" data-scroll="#work">Work</a></li>
           <li class="menu__item"><a class="menu__link" href="#footer" data-scroll="#footer">Contact</a></li>
           <li class="menu__item">
             <svg class="menu__user menu__user__cart" viewBox="0 -31 512.00026 512" xmlns="http://www.w3.org/2000/svg">
@@ -75,32 +75,30 @@
       <h1 class="intro__title">Welcome to MoGo</h1>
       <a class="intro__link" href="#">Learn More</a>
     </div>
-  </div>
-  <div class="intro__slider">
-    <div class="container">
-      <div class="slide__list main_flex__nowrap flex__jcontent_between">
-        <div class="slide__item slider__item_active">
-          <span class="slide__item__num">01</span>
-          <span class="slide__item__section">Intro</span>
-        </div>
-        <div class="slide__item">
-          <span class="slide__item__num">02</span>
-          <span class="slide__item__section">Work</span>
-        </div>
-        <div class="slide__item">
-          <span class="slide__item__num">03</span>
-          <span class="slide__item__section">About</span>
-        </div>
-        <div class="slide__item">
-          <span class="slide__item__num">04</span>
-          <span class="slide__item__section">Contacts</span>
-        </div>
-      </div>
+    <div class="intro__slider">
+      <ul class="intro__slider__list main_flex__nowrap flex__jcontent_between">
+        <li class="intro__slider__item slider__item_active">
+          <span class="intro__slider__num">01</span>
+          <span class="intro__slider__section">Intro</span>
+        </li>
+        <li class="intro__slider__item">
+          <span class="intro__slider__num">02</span>
+          <span class="intro__slider__section">Work</span>
+        </li>
+        <li class="intro__slider__item">
+          <span class="intro__slider__num">03</span>
+          <span class="intro__slider__section">About</span>
+        </li>
+        <li class="intro__slider__item">
+          <span class="intro__slider__num">04</span>
+          <span class="intro__slider__section">Contacts</span>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
 <main>
-  <section class="section section__about" id="section__about">
+  <section class="section about" id="about">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">What we do</h3>
@@ -224,7 +222,7 @@
       </ul>
     </div>
   </div>
-  <section class="section section__services" id="section__services">
+  <section class="section services" id="services">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">We work with</h3>
@@ -232,7 +230,7 @@
       </div>
       <ul class="services__list">
         <li class="services__item">
-          <svg class="services__item__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="services__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                style="enable-background:new 0 0 512 512;" xml:space="preserve">
               <path d="M402,166c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S407.52,166,402,166z"/>
@@ -257,12 +255,12 @@
             <path
               d="M462,166h-20c-5.522,0-10,4.477-10,10s4.478,10,10,10h20c5.522,0,10-4.477,10-10S467.522,166,462,166z"/>
             </svg>
-          <h4 class="services__item__title">Photography</h4>
-          <p class="services__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <h4 class="services__title">Photography</h4>
+          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor.</p>
         </li>
         <li class="services__item">
-          <svg class="services__item__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <svg class="services__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <path
               d="m316 346c-5.519531 0-10 4.480469-10 10s4.480469 10 10 10 10-4.480469 10-10-4.480469-10-10-10zm0 0"/>
             <path
@@ -270,12 +268,12 @@
             <path
               d="m276 346h-60c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h60c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10zm0 0"/>
           </svg>
-          <h4 class="services__item__title">Web design</h4>
-          <p class="services__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <h4 class="services__title">Web design</h4>
+          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor.</p>
         </li>
         <li class="services__item">
-          <svg class="services__item__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="services__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480"
                style="enable-background:new 0 0 480 480;" xml:space="preserve">
               <path d="M376,136C376,61.008,314.992,0,240,0S104,61.008,104,136c0,39.56,17.496,77.12,47.272,102.84
@@ -326,15 +324,15 @@
       c0,16.52,7.28,32.072,19.984,42.656L208,179.744V232h-39.824C137.96,209.344,120,173.68,120,136c0-66.168,53.832-120,120-120
       s120,53.832,120,120C360,173.68,342.04,209.344,311.824,232z"/>
             </svg>
-          <h4 class="services__item__title">Creativity</h4>
-          <p class="services__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <h4 class="services__title">Creativity</h4>
+          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor.</p>
         </li>
       </ul>
       <hr>
       <ul class="services__list">
         <li class="services__item">
-          <svg class="services__item__icon" viewBox="0 0 512.00016 512" width="512pt"
+          <svg class="services__icon" viewBox="0 0 512.00016 512" width="512pt"
                xmlns="http://www.w3.org/2000/svg">
             <path
               d="m413.867188 85.332031c-7.070313 0-12.800782 5.730469-12.800782 12.800781 0 7.070313 5.730469 12.800782 12.800782 12.800782 7.070312 0 12.800781-5.730469 12.800781-12.800782 0-7.070312-5.730469-12.800781-12.800781-12.800781zm0 0"/>
@@ -353,12 +351,12 @@
             <path d="m198.769531 420.632812 34.132813-34.132812 12.066406 12.066406-34.132812 34.132813zm0 0"/>
             <path d="m224.363281 446.230469 34.136719-34.132813 12.066406 12.066406-34.132812 34.136719zm0 0"/>
           </svg>
-          <h4 class="services__item__title">Seo</h4>
-          <p class="services__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <h4 class="services__title">Seo</h4>
+          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor.</p>
         </li>
         <li class="services__item">
-          <svg class="services__item__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="services__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                style="enable-background:new 0 0 512 512;" xml:space="preserve">
               <path
@@ -401,12 +399,12 @@
       c0.816,0.205,1.636,0.304,2.44,0.304c4.471,0,8.543-3.025,9.682-7.559l23.747-94.566
       C398.614,117.611,395.365,112.184,390.015,110.84z"/>
             </svg>
-          <h4 class="services__item__title">Css/Html</h4>
-          <p class="services__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <h4 class="services__title">Css/Html</h4>
+          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor.</p>
         </li>
         <li class="services__item">
-          <svg class="services__item__icon" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64"
+          <svg class="services__icon" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64"
                width="512" xmlns="http://www.w3.org/2000/svg">
             <path
               d="m29.586 9 3.777 3.777c.164-.742.379-1.469.653-2.175l-3.602-3.602h-5.494c.047.328.08.66.08 1s-.033.672-.08 1z"/>
@@ -431,8 +429,8 @@
               d="m63 49c0-1.694-1.673-3.13-4.712-4.044l-.576 1.916c2.259.679 3.288 1.579 3.288 2.128 0 1.194-3.988 3-10 3-1.014 0-1.965-.055-2.854-.146-.091-.889-.146-1.84-.146-2.854 0-6.012 1.806-10 3-10 .549 0 1.45 1.028 2.127 3.287l1.916-.574c-.912-3.039-2.348-4.713-4.043-4.713-3.283 0-5 6.037-5 12 0 .859.04 1.717.111 2.561-3.187-.61-5.111-1.732-5.111-2.561 0-.549 1.029-1.449 3.288-2.128l-.576-1.916c-3.039.914-4.712 2.35-4.712 4.044 0 2.413 3.265 3.977 7.362 4.638.661 4.096 2.225 7.362 4.638 7.362 1.695 0 3.131-1.674 4.043-4.713l-1.916-.574c-.677 2.259-1.578 3.287-2.127 3.287-.829 0-1.951-1.924-2.561-5.111.844.071 1.702.111 2.561.111 5.963 0 12-1.718 12-5z"/>
             <path d="m50 48h2v2h-2z"/>
           </svg>
-          <h4 class="services__item__title">Digital</h4>
-          <p class="services__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <h4 class="services__title">Digital</h4>
+          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor.</p>
         </li>
       </ul>
@@ -452,7 +450,7 @@
     </div>
   </section>
 
-  <section class="section section__service">
+  <section class="section service">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Service</h3>
@@ -464,10 +462,10 @@
         </div>
       </div>
       <div class="service__present">
-        <div class="service__left__side">
-          <img class="service__left__img" src="img/service__left.jpg" alt="man glues pictures on the wall">
+        <div class="service__left">
+          <img class="service__img" src="img/service__left.jpg" alt="man glues pictures on the wall">
         </div>
-        <div class="service__right__side">
+        <div class="service__right">
           <div class="service__accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
@@ -621,99 +619,73 @@
 
   <div class="section testimonials section--gray">
     <div class="container">
-      <div class="swiper-container testimonials__list">
-        <ul class="swiper-wrapper testimonials__items">
-<!--          <li class="testimonials__item swiper-slide" id="lastClone">-->
-<!--            <div class="testimonials__item__photo">-->
-<!--              <img src="http://placehold.it/145" alt="photo of the person who made the review">-->
-<!--            </div>-->
-<!--            <div class="testimonials__item__text">-->
-<!--              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud-->
-<!--                exercitation.&Prime;-->
-<!--              </blockquote>-->
-<!--              <span class="testimonials__item__author">John Doe - 5</span>-->
-<!--            </div>-->
-<!--          </li>-->
+      <div class="swiper-container testimonials">
+        <ul class="swiper-wrapper testimonials__list">
           <li class="swiper-slide testimonials__item">
-            <div class="testimonials__item__photo">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 1</span>
+              <cite class="testimonials__author">John Doe - 1</cite>
             </div>
           </li>
           <li class="swiper-slide testimonials__item">
-            <div class="testimonials__item__photo">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime&;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 2</span>
+              <cite class="testimonials__author">John Doe - 2</cite>
             </div>
           </li>
           <li class="swiper-slide testimonials__item">
-            <div class="testimonials__item__photo">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 3</span>
+              <cite class="testimonials__author">John Doe - 3</cite>
             </div>
           </li>
           <li class="swiper-slide testimonials__item">
-            <div class="testimonials__item__photo">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 4</span>
+              <cite class="testimonials__author">John Doe - 4</cite>
             </div>
           </li>
           <li class="swiper-slide testimonials__item">
-            <div class="testimonials__item__photo">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 5</span>
+              <cite class="testimonials__author">John Doe - 5</cite>
             </div>
           </li>
-<!--          <li class="testimonials__item" id="firstClone swiper-slide">-->
-<!--            <div class="testimonials__item__photo">-->
-<!--              <img src="http://placehold.it/145" alt="photo of the person who made the review">-->
-<!--            </div>-->
-<!--            <div class="testimonials__item__text">-->
-<!--              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud-->
-<!--                exercitation.&Prime;-->
-<!--              </blockquote>-->
-<!--              <span class="testimonials__item__author">John Doe - 1</span>-->
-<!--            </div>-->
-<!--          </li>-->
         </ul>
         <button class="testimonials__btn testimonials__btn--prev" type="button">Prev</button>
         <button class="testimonials__btn testimonials__btn--next" type="button">Next</button>
@@ -962,7 +934,7 @@
     </div>
   </div>
 
-  <section class="section section__work" id="section__work">
+  <section class="section work" id="work">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">What we do</h3>
@@ -1267,99 +1239,73 @@
 
   <div class="section testimonials">
     <div class="container">
-      <div class="testimonials__list swiper-container">
-        <ul class="testimonials__items swiper-wrapper">
-<!--          <li class="testimonials__item" id="lastClone-2">-->
-<!--            <div class="testimonials__item__photo">-->
-<!--              <img src="http://placehold.it/145" alt="photo of the person who made the review">-->
-<!--            </div>-->
-<!--            <div class="testimonials__item__text">-->
-<!--              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud-->
-<!--                exercitation.&Prime;-->
-<!--              </blockquote>-->
-<!--              <span class="testimonials__item__author">John Doe - 5</span>-->
-<!--            </div>-->
-<!--          </li>-->
-          <li class="testimonials__item swiper-slide">
-            <div class="testimonials__item__photo">
+      <div class="swiper-container testimonials">
+        <ul class="swiper-wrapper testimonials__list">
+          <li class="swiper-slide testimonials__item">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 1</span>
+              <cite class="testimonials__author">John Doe - 1</cite>
             </div>
           </li>
-          <li class="testimonials__item swiper-slide">
-            <div class="testimonials__item__photo">
+          <li class="swiper-slide testimonials__item">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 2</span>
+              <cite class="testimonials__author">John Doe - 2</cite>
             </div>
           </li>
-          <li class="testimonials__item swiper-slide">
-            <div class="testimonials__item__photo">
+          <li class="swiper-slide testimonials__item">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 3</span>
+              <cite class="testimonials__author">John Doe - 3</cite>
             </div>
           </li>
-          <li class="testimonials__item swiper-slide">
-            <div class="testimonials__item__photo">
+          <li class="swiper-slide testimonials__item">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 4</span>
+              <cite class="testimonials__author">John Doe - 4</cite>
             </div>
           </li>
-          <li class="testimonials__item swiper-slide">
-            <div class="testimonials__item__photo">
+          <li class="swiper-slide testimonials__item">
+            <div class="testimonials__photo">
               <img src="http://placehold.it/145" alt="photo of the person who made the review">
             </div>
-            <div class="testimonials__item__text">
-              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="testimonials__text">
+              <blockquote class="testimonials__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.&Prime;
+                exercitation.
               </blockquote>
-              <span class="testimonials__item__author">John Doe - 5</span>
+              <cite class="testimonials__author">John Doe - 5</cite>
             </div>
           </li>
-<!--          <li class="testimonials__item" id="firstClone-2">-->
-<!--            <div class="testimonials__item__photo">-->
-<!--              <img src="http://placehold.it/145" alt="photo of the person who made the review">-->
-<!--            </div>-->
-<!--            <div class="testimonials__item__text">-->
-<!--              <blockquote class="testimonials__text">&Prime;Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud-->
-<!--                exercitation.&Prime;-->
-<!--              </blockquote>-->
-<!--              <span class="testimonials__item__author">John Doe - 1</span>-->
-<!--            </div>-->
-<!--          </li>-->
         </ul>
         <button class="testimonials__btn testimonials__btn--prev" type="button">Prev</button>
         <button class="testimonials__btn testimonials__btn--next" type="button">Next</button>
@@ -1367,7 +1313,7 @@
     </div>
   </div>
 
-  <section class="section section__clients">
+  <section class="section clients" style="background-image: linear-gradient( rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), url(img/clients/bg.jpg);">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Happy Clients</h3>
@@ -1375,47 +1321,51 @@
       </div>
       <ul class="clients__list grid">
         <li class="clients__item">
-          <img src="img/clients/1.jpg" alt="First client" class="clients__item__photo">
+          <img src="img/clients/1.jpg" alt="First client" class="clients__photo">
           <div class="clients__item__content">
-            <span class="clients__item__name">Matthew Dix</span>
-            <span class="clients__item__prof">Graphic Design</span>
-            <p class="clients__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            <cite class="clients__name">Matthew Dix</cite>
+            <span class="clients__prof">Graphic Design</span>
+            <blockquote class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+            </blockquote>
           </div>
         </li>
         <li class="clients__item">
-          <img src="img/clients/2.png" alt="Second client" class="clients__item__photo">
+          <img src="img/clients/2.png" alt="Second client" class="clients__photo">
           <div class="clients__item__content">
-            <span class="clients__item__name">Jaelynn Castillo</span>
-            <span class="clients__item__prof">Graphic Design</span>
-            <p class="clients__item__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <cite class="clients__name">Jaelynn Castillo</cite>
+            <span class="clients__prof">Graphic Design</span>
+            <blockquote class="clients__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </blockquote>
           </div>
         </li>
         <li class="clients__item">
-          <img src="img/clients/3.jpg" alt="Third client" class="clients__item__photo">
-          <div class="clients__item__content">
-            <span class="clients__item__name">Jesmine Doe</span>
-            <span class="clients__item__prof">Graphic Design</span>
-            <p class="clients__item__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <img src="img/clients/3.jpg" alt="Third client" class="clients__photo">
+          <div class="clients__content">
+            <cite class="clients__name">Jesmine Doe</cite>
+            <span class="clients__prof">Graphic Design</span>
+            <blockquote class="clients__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </blockquote>
           </div>
         </li>
         <li class="clients__item">
-          <img src="img/clients/4.jpg" alt="Fourth client" class="clients__item__photo">
-          <div class="clients__item__content">
-            <span class="clients__item__name">Maria Jones</span>
-            <span class="clients__item__prof">Graphic Design</span>
-            <p class="clients__item__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <img src="img/clients/4.jpg" alt="Fourth client" class="clients__photo">
+          <div class="clients__content">
+            <cite class="clients__name">Maria Jones</cite>
+            <span class="clients__prof">Graphic Design</span>
+            <blockquote class="clients__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+              ut labore et dolore magna aliqua. Ut enim ad minim.
+            </blockquote>
           </div>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="section section__blog" id="section__blog">
+  <section class="section blog" id="blog">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Our stories</h3>
@@ -1424,22 +1374,22 @@
       <ul class="blog__list">
         <li class="blog__item">
           <a href="#" class="blog__link" target="_blank">
-            <div class="blog__item__header">
-              <div class="blog__item__img">
+            <div class="blog__header">
+              <div class="blog__img">
                 <img src="img/blog/1.jpg" alt="Woman sitting on a chair behind a white Desk and writes something">
               </div>
-              <div class="blog__item__date">
-                <div class="blog__item__date--day">15</div>
-                <div class="blog__item__date--month">Jan</div>
+              <div class="blog__date">
+                <div class="blog__date--day">15</div>
+                <div class="blog__date--month">Jan</div>
               </div>
             </div>
-            <div class="blog__item__content">
-              <h3 class="blog__item__title">Lorem ipsum dolor sit amet</h3>
-              <p class="blog__item__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <div class="blog__content">
+              <h3 class="blog__title">Lorem ipsum dolor sit amet</h3>
+              <p class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
             </div>
-            <div class="blog__item__stat main_flex__nowrap flex__align-items_center">
-              <svg class="blog__stat__view__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <div class="blog__stat main_flex__nowrap flex__align-items_center">
+              <svg class="blog__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 488.85 488.85"
                    style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
                   <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
@@ -1448,8 +1398,8 @@
     C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
     c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
                 </svg>
-              <span class="blog__stat__view">542</span>
-              <svg class="blog__stat__comment__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              <span class="blog__view">542</span>
+              <svg class="blog__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
                    style="enable-background:new 0 0 60 60;" xml:space="preserve">
                   <path d="M30,1.5c-16.542,0-30,12.112-30,27c0,5.204,1.646,10.245,4.768,14.604c-0.591,6.537-2.175,11.39-4.475,13.689
@@ -1458,30 +1408,30 @@
   c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S18.206,32.5,16,32.5z M30,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4
   S32.206,32.5,30,32.5z M44,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S46.206,32.5,44,32.5z"/>
                 </svg>
-              <span class="blog__stat__comment">17</span>
+              <span class="blog__comment">17</span>
             </div>
           </a>
         </li>
 
         <li class="blog__item">
           <a href="#" class="blog__link" target="_blank">
-            <div class="blog__item__header">
-              <div class="blog__item__img">
+            <div class="blog__header">
+              <div class="blog__img">
                 <img src="img/blog/2.jpg"
                      alt="On the gray table is a MacBook, some pens,a green flower and a cup of coffee">
               </div>
-              <div class="blog__item__date">
-                <div class="blog__item__date--day">14</div>
-                <div class="blog__item__date--month">Jan</div>
+              <div class="blog__date">
+                <div class="blog__date--day">14</div>
+                <div class="blog__date--month">Jan</div>
               </div>
             </div>
-            <div class="blog__item__content">
-              <h3 class="blog__item__title">sed do eiusmod tempor</h3>
-              <p class="blog__item__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            <div class="blog__content">
+              <h3 class="blog__title">sed do eiusmod tempor</h3>
+              <p class="blog__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua</p>
             </div>
-            <div class="blog__item__stat main_flex__nowrap flex__align-items_center">
-              <svg class="blog__stat__view__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <div class="blog__stat main_flex__nowrap flex__align-items_center">
+              <svg class="blog__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 488.85 488.85"
                    style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
                   <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
@@ -1490,8 +1440,8 @@
     C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
     c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
                 </svg>
-              <span class="blog__stat__view">992</span>
-              <svg class="blog__stat__comment__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              <span class="blog__view">992</span>
+              <svg class="blog__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
                    style="enable-background:new 0 0 60 60;" xml:space="preserve">
                   <path d="M30,1.5c-16.542,0-30,12.112-30,27c0,5.204,1.646,10.245,4.768,14.604c-0.591,6.537-2.175,11.39-4.475,13.689
@@ -1500,28 +1450,28 @@
   c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S18.206,32.5,16,32.5z M30,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4
   S32.206,32.5,30,32.5z M44,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S46.206,32.5,44,32.5z"/>
                 </svg>
-              <span class="blog__stat__comment">42</span>
+              <span class="blog__comment">42</span>
             </div>
           </a>
         </li>
 
         <li class="blog__item">
           <a href="#" class="blog__link" target="_blank">
-            <div class="blog__item__header">
-              <div class="blog__item__img">
+            <div class="blog__header">
+              <div class="blog__img">
                 <img src="img/blog/3.jpg" alt="a man in a suit uses a tablet">
               </div>
-              <div class="blog__item__date">
-                <div class="blog__item__date--day">12</div>
-                <div class="blog__item__date--month">Jan</div>
+              <div class="blog__date">
+                <div class="blog__date--day">12</div>
+                <div class="blog__date--month">Jan</div>
               </div>
             </div>
-            <div class="blog__item__content">
-              <h3 class="blog__item__title">incididunt ut labore et dolore</h3>
-              <p class="blog__item__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="blog__content">
+              <h3 class="blog__title">incididunt ut labore et dolore</h3>
+              <p class="blog__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="blog__item__stat main_flex__nowrap flex__align-items_center">
-              <svg class="blog__stat__view__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <div class="blog__stat main_flex__nowrap flex__align-items_center">
+              <svg class="blog__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 488.85 488.85"
                    style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
                   <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
@@ -1530,8 +1480,8 @@
     C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
     c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
                 </svg>
-              <span class="blog__stat__view">1560</span>
-              <svg class="blog__stat__comment__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              <span class="blog__view">1560</span>
+              <svg class="blog__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
                    style="enable-background:new 0 0 60 60;" xml:space="preserve">
                   <path d="M30,1.5c-16.542,0-30,12.112-30,27c0,5.204,1.646,10.245,4.768,14.604c-0.591,6.537-2.175,11.39-4.475,13.689
@@ -1540,7 +1490,7 @@
   c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S18.206,32.5,16,32.5z M30,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4
   S32.206,32.5,30,32.5z M44,32.5c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S46.206,32.5,44,32.5z"/>
                 </svg>
-              <span class="blog__stat__comment">98</span>
+              <span class="blog__comment">98</span>
             </div>
           </a>
         </li>
@@ -1809,19 +1759,37 @@
         <div class="footer__instagram">
           <h4 class="instagram__title">Instagram</h4>
           <ul class="instagram__photo__list main_flex__nowrap flex__align-items_center">
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/1.jpg" alt="Instagram photo"></a></li>
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/2.jpg" alt="Instagram photo"></a></li>
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/3.jpg" alt="Instagram photo"></a></li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/1.jpg" alt="Instagram photo"></a>
+            </li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/2.jpg" alt="Instagram photo"></a>
+            </li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/3.jpg" alt="Instagram photo"></a>
+            </li>
           </ul>
           <ul class="instagram__photo__list main_flex__nowrap">
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/4.jpg" alt="Instagram photo"></a></li>
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/5.jpg" alt="Instagram photo"></a></li>
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/6.jpg" alt="Instagram photo"></a></li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/4.jpg" alt="Instagram photo"></a>
+            </li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/5.jpg" alt="Instagram photo"></a>
+            </li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/6.jpg" alt="Instagram photo"></a>
+            </li>
           </ul>
           <ul class="instagram__photo__list main_flex__nowrap">
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/7.jpg" alt="Instagram photo"></a></li>
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/8.jpg" alt="Instagram photo"></a></li>
-            <li class="photo__item"><a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/9.jpg" alt="Instagram photo"></a></li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/7.jpg" alt="Instagram photo"></a>
+            </li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/8.jpg" alt="Instagram photo"></a>
+            </li>
+            <li class="photo__item">
+              <a href="#" class="photo__link" target="_blank"><img class="photo__picture" src="img/footer-instagram/9.jpg" alt="Instagram photo"></a>
+            </li>
           </ul>
           <div class="instagram__buttoncase">
             <a class="instagram__more" href="#" target="_blank">View more photos</a>
@@ -1844,15 +1812,15 @@
 <script src="dist/main.js"></script>
 <script>
   let mySwiper = new Swiper('.swiper-container', {
-      // Optional parameters
-      loop: true,
-      speed: 700,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.testimonials__btn--next',
-        prevEl: '.testimonials__btn--prev',
-      }
-    })
+    // Optional parameters
+    loop: true,
+    speed: 700,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.testimonials__btn--next',
+      prevEl: '.testimonials__btn--prev',
+    }
+  })
 </script>
 <noscript>
   <div style="position: fixed; top: 0; left: 0; z-index: 3000; height: 100%; width: 100%; background-color: #FFFFFF; display: flex; justify-content: center; align-items: center;">
