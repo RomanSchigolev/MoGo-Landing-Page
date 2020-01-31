@@ -1,7 +1,7 @@
 "use strict";
 
 (function () {
-  //Accordion
+  // Accordion
   var accordion = document.querySelector('.service__accordion');
   var accordionItems = accordion.querySelectorAll('.accordion__item');
   var accordionButtons = accordion.querySelectorAll('.accordion__header');
@@ -20,7 +20,7 @@
 
   accordionButtons.forEach(function (accordion__header) {
     return accordion__header.addEventListener('click', toggleAccordion);
-  }); //Pop-Up Map
+  }); // Pop-Up Map
 
   var openModalButtons = document.querySelectorAll('[data-open-modal]');
   var closeModalButtons = document.querySelectorAll('[data-close-modal]');
@@ -107,65 +107,5 @@
     }
   }
 
-  window.addEventListener('scroll', fixedHeader); //Slider
-
-  /*
-  const sliderList = document.querySelector('.testimonials__items');
-  const sliderItems = sliderList.querySelectorAll('.testimonials__item');
-  const sliderItemWidth = sliderItems[0].getBoundingClientRect().width; // Find out the width of the element
-    const buttonPrev = document.querySelector('.testimonials__btn--prev');
-  const buttonNext = document.querySelector('.testimonials__btn--next');
-    let counter = 1; // counter of elements
-  sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`; // Initially let's move to the next element
-    const animationSlider = (slider, itemWidth, itemIndex) => {
-    slider.style.transition = 'transform 0.5s ease-in';
-    slider.style.transform = `translateX(${(-itemWidth) * itemIndex}px)`;
-  };
-    buttonPrev.addEventListener('click', (event) => {
-    if (counter <= 0) { // In order to repeated and quick clicking on the "back" button the slider work correctly, otherwise you will see a "void"
-      return;
-    }
-    counter--;
-    animationSlider(sliderList, sliderItemWidth, counter);
-  });
-    buttonNext.addEventListener('click', (event) => {
-    if (counter >= sliderItems.length - 1) {  // In order to repeated and quick clicking on the "forward" button the slider work correctly, otherwise you will see a "void"
-      return;
-    }
-    counter++;
-    animationSlider(sliderList, sliderItemWidth, counter);
-  });
-    buttonPrev.addEventListener('touchstart', (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    if (counter <= 0) {  // In order to repeated and quick clicking on the "back" button the slider work correctly, otherwise you will see a "void"
-      return;
-    }
-    counter--;
-    animationSlider(sliderList, sliderItemWidth, counter);
-  }, false);
-    // For mobile device
-  buttonNext.addEventListener('touchstart', (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    if (counter >= sliderItems.length - 1) {  // In order to repeated and quick clicking on the "forward" button the slider work correctly, otherwise you will see a "void"
-      return;
-    }
-    counter++;
-    animationSlider(sliderList, sliderItemWidth, counter);
-  }, false);
-    // After animation
-  sliderList.addEventListener('transitionend', (event) => {
-    if (sliderItems[counter].id === 'lastClone') {
-      sliderList.style.transition = 'none';
-      counter = sliderItems.length - 2;
-      sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
-    }
-    if (sliderItems[counter].id === 'firstClone') {
-      sliderList.style.transition = 'none';
-      counter = sliderItems.length - counter;
-      sliderList.style.transform = `translateX(${(-sliderItemWidth) * counter}px)`;
-    }
-  });
-  */
+  window.addEventListener('scroll', fixedHeader);
 })();

@@ -16,10 +16,6 @@
         flex-direction: row !important;
     }
 
-    .menu__link{
-        font-size: 1.4vmax;
-    }
-
     .intro__slider{
         visibility: hidden;
     }
@@ -87,7 +83,7 @@
     }
 
     .menu__link{
-        font-size: 1.5vmax;
+        font-size: 1.7vmax;
     }
 
     .menu__link::after{
@@ -112,16 +108,6 @@
 
     .menu__item:nth-child(5){
         transition-delay: 0.9s;
-    }
-
-    .menu__item:nth-child(6) {
-        visibility: hidden;
-        position: absolute;
-    }
-
-    .menu__item:last-child {
-        visibility: hidden;
-        position: absolute;
     }
 
     @keyframes menuItemFadeIn {
