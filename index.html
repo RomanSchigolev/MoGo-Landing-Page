@@ -40,7 +40,7 @@
             <a class="menu__link" href="#section__services" data-scroll="#section__services">Services</a></li>
           <li class="menu__item"><a class="menu__link" href="#blog" data-scroll="#blog">Blog</a></li>
           <li class="menu__item"><a class="menu__link" href="#work" data-scroll="#work">Work</a></li>
-          <li class="menu__item"><a class="menu__link" href="#footer" data-scroll="#footer">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="#social" data-scroll="#social">Contact</a></li>
         </ul>
       </nav>
       <button class="burger" type="button">
@@ -433,7 +433,7 @@
     </div>
   </section>
 
-  <section class="section service">
+  <section class="section section__service">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Service</h3>
@@ -600,7 +600,7 @@
     </div>
   </section>
 
-  <div class="section testimonials section--gray">
+  <div class="testimonials section--gray">
     <div class="container">
       <div class="swiper-container testimonials">
         <ul class="swiper-wrapper testimonials__list">
@@ -904,7 +904,7 @@
     </div>
   </section>
 
-  <div class="section section--gray">
+  <div class="section--gray">
     <div class="container">
       <ul class="brand__list main_flex__nowrap flex__jcontent_between">
         <li class="brand__item"><img class="brand__item__img" src="img/Logo/1.png" alt="Logo number one"></li>
@@ -917,7 +917,7 @@
     </div>
   </div>
 
-  <section class="section work" id="work">
+  <section class="section section__work" id="work">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">What we do</h3>
@@ -1220,7 +1220,7 @@
     </div>
   </section>
 
-  <div class="section testimonials">
+  <div class="testimonials  section--gray section--testimonials_padding">
     <div class="container">
       <div class="swiper-container testimonials">
         <ul class="swiper-wrapper testimonials__list">
@@ -1296,7 +1296,7 @@
     </div>
   </div>
 
-  <section class="section clients" style="background-image: linear-gradient( rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), url(img/clients/bg.jpg);">
+  <section class="section section__clients" style="background-image: linear-gradient( rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), url(img/clients/bg.jpg);">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Happy Clients</h3>
@@ -1348,7 +1348,7 @@
     </div>
   </section>
 
-  <section class="section blog" id="blog">
+  <section class="section section__blog" id="blog">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Our stories</h3>
@@ -1515,23 +1515,23 @@
   </div>
   <div class="modal__overlay"></div>
 
-  <footer class="footer" id="footer">
+  <div class="section section__social" id="social">
     <div class="container">
-      <div class="footer__list grid">
-        <div class="footer__social">
-          <h4 class="footer__logo">MoGo</h4>
-          <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      <ul class="social__list grid">
+        <li class="social__subscribe">
+          <h4 class="subscribe__logo">MoGo</h4>
+          <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <div class="footer__social__stat">
-            <span class="stat__num">15k</span>
-            <span class="stat__follower">followers</span>
+          <div class="subscribe__stat">
+            <span class="subscribe__quantity">15k</span>
+            <span class="subscribe__follower">followers</span>
           </div>
-          <ul class="follow__list main_flex__nowrap flex__align-items_center">
-            <li class="follow--action">Follow Us:</li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          <ul class="subscribe__list main_flex__nowrap flex__align-items_center">
+            <li class="subscribe__proposal">Follow Us:</li>
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.124px" height="96.123px"
                      viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
                     <path
@@ -1542,9 +1542,9 @@
                   </svg>
               </a>
             </li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
                      style="enable-background:new 0 0 612 612;" xml:space="preserve">
                     <path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
@@ -1557,9 +1557,9 @@
                   </svg>
               </a>
             </li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="97.395px" height="97.395px"
                      viewBox="0 0 97.395 97.395" style="enable-background:new 0 0 97.395 97.395;" xml:space="preserve">
                     <path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
@@ -1572,9 +1572,9 @@
                   </svg>
               </a>
             </li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310.05 310.05"
                      style="enable-background:new 0 0 310.05 310.05;" xml:space="preserve">
                     <path d="M245.265,31.772C223.923,11.284,194.388,0,162.101,0c-49.32,0-79.654,20.217-96.416,37.176
@@ -1590,9 +1590,9 @@
                   </svg>
               </a>
             </li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="475.092px" height="475.092px"
                      viewBox="0 0 475.092 475.092" style="enable-background:new 0 0 475.092 475.092;"
                      xml:space="preserve">
@@ -1628,9 +1628,9 @@
                   </svg>
               </a>
             </li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="438.533px" height="438.533px"
                      viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;"
                      xml:space="preserve">
@@ -1663,9 +1663,9 @@
                   </svg>
               </a>
             </li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                      style="enable-background:new 0 0 512 512;" xml:space="preserve">
                     <path d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80
@@ -1677,9 +1677,9 @@
                   </svg>
               </a>
             </li>
-            <li class="follow__item">
-              <a href="#" class="follow__link" target="_blank">
-                <svg class="follow__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <li class="subscribe__item">
+              <a href="#" class="subscribe__link" target="_blank">
+                <svg class="subscribe__link__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="438.542px" height="438.543px"
                      viewBox="0 0 438.542 438.543" style="enable-background:new 0 0 438.542 438.543;"
                      xml:space="preserve">
@@ -1694,11 +1694,11 @@
             </li>
           </ul>
           <form class="subscribe__form" action="/" method="post">
-            <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
+            <input class="subscribe__input" type="email" name="subscribe__email" id="subscribe__email" placeholder="Your Email...">
             <button class="subscribe__btn" type="submit">Subscribe</button>
           </form>
-        </div>
-        <div class="footer__publication">
+        </li>
+        <li class="social__publication">
           <h4 class="publication__title">Blogs</h4>
           <ul class="publication__list">
             <li class="publication__item">
@@ -1738,8 +1738,8 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="footer__instagram">
+        </li>
+        <li class="social__instagram">
           <h4 class="instagram__title">Instagram</h4>
           <ul class="instagram__photo__list main_flex__nowrap flex__align-items_center">
             <li class="photo__item">
@@ -1777,16 +1777,16 @@
           <div class="instagram__buttoncase">
             <a class="instagram__more" href="#" target="_blank">View more photos</a>
           </div>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        <div class="copyright__title">
-          &copy; 2016 MoGo free PSD template by <span>Laaqiq</span>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-  </footer>
+  </div>
 </main>
+<footer class="footer">
+  <div class="footer__copyright">
+    &copy; 2016 MoGo free PSD template by <span>Laaqiq</span>
+  </div>
+</footer>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=<961e8a5d-0adc-4593-82b9-f10401f99306>&lang=en_US"></script>
 <script src="js/library/jquery-3.3.1.min.js"></script>
 <script src="js/library/swiper.min.js"></script>

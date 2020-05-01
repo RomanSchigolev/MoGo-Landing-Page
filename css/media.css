@@ -303,20 +303,20 @@
         height: 125px
     }
 
-    .footer__list {
+    .social__list {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
 
-    .footer__social{
+    .social__subscribe{
         grid-column: 1/-1;
     }
 
-    .footer__logo {
+    .subscribe__logo {
         margin-bottom: 20px;
     }
 
-    .footer__text {
+    .subscribe__text {
         margin-bottom: 40px;
     }
 
@@ -333,7 +333,7 @@
         padding: 7px 7px;
     }
 
-    .copyright__title {
+    .footer__copyright {
         font-size: 13px
     }
 }
@@ -434,9 +434,8 @@
         grid-column: 1/-1;
     }
 
-    .footer__list {
+    .social__list {
         grid-template-columns: minmax(200px, 600px);
-        padding: 40px 0;
     }
 }
 
@@ -608,17 +607,17 @@
         font-size: 13px;
     }
 
-    .follow__list{
+    .subscribe__list{
         flex-wrap: wrap;
     }
 
-    .follow--action {
+    .subscribe__proposal {
         width: 100%;
         margin-bottom: 20px;
         margin-right: 0;
     }
 
-    .follow__item {
+    .subscribe__item {
         width: 12%;
         margin-right: 0;
     }
@@ -628,7 +627,7 @@
         line-height: 1.6;
     }
 
-    .copyright__title {
+    .footer__copyright {
         font-size: 12px;
     }
 }
@@ -637,17 +636,17 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){
 
-    .follow__list{
+    .subscribe__list{
         flex-wrap: wrap;
     }
 
-    .follow--action {
+    .follow--subscribe__proposal {
         width: 100%;
         margin-bottom: 20px;
         margin-right: 0;
     }
 
-    .follow__item {
+    .subscribe__item {
         width: 12%;
         margin-right: 0;
     }
@@ -657,7 +656,7 @@
         line-height: 1.6;
     }
 
-    .copyright__title {
+    .footer__copyright {
         font-size: 12px;
     }
 

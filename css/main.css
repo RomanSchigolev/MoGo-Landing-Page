@@ -137,6 +137,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #999999;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 ::-webkit-scrollbar{
@@ -170,6 +173,10 @@ html{
 
 .section--gray{
     background-color: #f8f8f8;
+}
+
+.section--testimonials_padding {
+    padding-bottom: 80px;
 }
 
 .section--map{
@@ -904,6 +911,12 @@ html{
     transform: rotate(-135deg);
 }
 
+.section__clients {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /*Logo*/
 .brand__item{
     list-style: none;
@@ -1241,71 +1254,65 @@ html{
     pointer-events: all;
 }
 
-/*Footer*/
-.footer{
-    background-color: #f8f8f8;
-}
-
-.footer__list{
+.social__list{
     grid-template-columns: 1fr 1fr minmax(270px, auto);
     grid-column-gap: 30px;
-    padding: 70px 0;
 }
 
-.footer__logo{
+.subscribe__logo{
     font-size: 46px;
     font-weight: 700;
     color: #cccccc;
     margin-bottom: 40px;
 }
 
-.footer__text{
+.subscribe__text{
     font-family: 'Roboto', sans-serif;
     line-height: 1.8;
     margin-bottom: 50px;
 }
 
-.footer__social__stat{
+.subscribe__stat{
     padding-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
     color: #333333;
     margin-bottom: 20px;
 }
 
-.stat__num{
+.subscribe__quantity{
     font-size: 18px;
     font-weight: 700;
     color: #333333;
     margin-right: 5px;
 }
 
-.follow__list{
+.subscribe__list{
     list-style: none;
     margin-bottom: 40px;
 }
 
-.follow__link__icon{
+.subscribe__link__icon{
     fill: #95e1d3;
     width: 18px;
     height: 18px;
     transition: all 0.2s linear;
 }
 
-.follow--action{
+.subscribe__proposal{
     font-weight: 300;
     font-style: italic;
     margin-right: 20px;
 }
 
-.follow__item{
+.subscribe__item{
     margin-right: 15px;
 }
 
-.follow__item:last-child{
+.subscribe__item:last-child{
     margin-right: 0;
 }
 
-.follow__item:hover .follow__link__icon{
+.subscribe__item:hover .subscribe__link__icon{
     transform: scale(0.9);
 }
 
@@ -1458,18 +1465,18 @@ input.subscribe__input:focus {
     color: #333333;
 }
 
+.footer {
+    margin-top: auto;
+}
+
 .footer__copyright{
     border-top: 1px solid #e5e5e5;
     padding: 20px 0;
-}
-
-.copyright__title{
     text-align: center;
     color: #333333;
     font-size: 14px;
 }
-
-.copyright__title span{
+.footer__copyright span{
     color: #f38181;
 }
 
