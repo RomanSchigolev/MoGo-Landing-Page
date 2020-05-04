@@ -127,7 +127,7 @@
     }
 
     .intro__link{
-        font-size: 2vmax;
+        font-size: 1.7vmax;
         padding: 1.1vmax 2vmax;
     }
 
@@ -228,7 +228,7 @@
         margin-top: 20px;
     }
 
-    .testimonials__review blockquote {
+    .testimonials__review {
         font-size: 17px
     }
 
