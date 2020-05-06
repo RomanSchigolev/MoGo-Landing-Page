@@ -7,6 +7,7 @@ MoGo - учебный макет для верстки. Этот макет вк
 * мобильное меню. 
 
 Были использованы flexBox и Grid.
+
 Реализована адаптивность под мобильные устройства.
 
 Ссылка на этот PSD макет: https://freebiesbug.com/psd-freebies/mogo-free-one-page-psd-template/
