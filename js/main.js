@@ -1,4 +1,4 @@
-(function () {
+(() => {
   // Accordion
   const accordion = document.querySelector('.service__accordion');
   const accordionItems = accordion.querySelectorAll('.accordion__item');

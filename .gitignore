@@ -2,8 +2,6 @@
 MoGo_FREE_Template_by_Laaqiq.psd
 node_modules/
 .babelrc
-.gitignore
 package-lock.json
 package.json
-/.gitignore
 bash.exe.stackdump

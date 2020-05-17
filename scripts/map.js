@@ -1,0 +1,1 @@
+"use strict";function init(){var o=new ymaps.Map("modal__content__maps",{center:[59.93587895726406,30.32601556825967],zoom:17,controls:["zoomControl"]}),a=new ymaps.Placemark([59.93587895726406,30.32601556825967],{});o.geoObjects.add(a)}ymaps.ready(init);
