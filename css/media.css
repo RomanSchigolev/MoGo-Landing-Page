@@ -236,7 +236,7 @@
         font-size: 21px;
     }
 
-    .social__item {
+    .card-social-link {
         padding: 13px;
     }
 
@@ -245,7 +245,7 @@
         height: 17px;
     }
 
-    .social__item:hover .social__item__icon {
+    .card-social-link:hover .social__item__icon {
         transform: scale(1);
     }
 
@@ -553,7 +553,7 @@
         justify-content: flex-start;
     }
 
-    .content__text{
+    .publication__text{
         margin-left: 0;
         margin-top: 20px;
     }
