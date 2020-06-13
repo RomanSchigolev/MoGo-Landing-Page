@@ -50,6 +50,7 @@
     }
     modal.classList.add('active');
     overlay.classList.add('active');
+    document.querySelector("html").style.overflowY = "hidden";
     document.onkeydown = event => {
       const modals = document.querySelectorAll('.modal.active');
       modals.forEach(modal => {
@@ -67,6 +68,7 @@
     }
     modal.classList.remove('active');
     overlay.classList.remove('active');
+    document.querySelector("html").style.overflowY = "auto";
     document.onkeydown = null;
   }
 
