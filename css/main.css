@@ -1020,16 +1020,19 @@ html{
     position: relative;
 }
 
-.clients__photo{
+.clients__photo {
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.clients__photo img{
     display: block;
     width: 110px;
     height: 110px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 40px;
 }
 
 .clients__name{
