@@ -1,28 +1,37 @@
 const gulp = require('gulp');
 const uglify = require('gulp-uglify-es').default;
 const babel = require('gulp-babel');
-const autoprefixer = require('gulp-autoprefixer');
+const autoPrefixer = require('gulp-autoprefixer');
 const minCss = require('gulp-clean-css');
 
-gulp.task('compress_js', () => {
+const scripts = () => {
   return gulp.src([
-    './js/main.js',
-    './js/map.js',
-    './js/libraries.js'
+    './src/js/main.js',
+    './src/js/map.js',
+    './src/js/libraries.js'
   ])
     .pipe(babel({
       presets: ['@babel/env']
     }))
     .pipe(uglify())
-    .pipe(gulp.dest('./scripts'));
-});
+    .pipe(gulp.dest('./dist/scripts'));
+};
+exports.scripts = scripts;
 
-gulp.task('compress_css', () => {
+const styles = () => {
   return gulp.src([
-    './css/main.css',
-    './css/media.css'
+    './src/css/main.css',
+    './src/css/media.css'
   ])
-    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(autoPrefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(minCss())
-    .pipe(gulp.dest('./styles'));
-});
+    .pipe(gulp.dest('./dist/styles'));
+};
+exports.styles = styles;
+
+exports.default = gulp.series(
+  gulp.parallel(
+    styles,
+    scripts,
+  )
+);
