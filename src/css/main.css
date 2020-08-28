@@ -168,15 +168,11 @@ html{
 
 /*Section*/
 .section{
-    padding: 80px 0;
+    margin: 80px 0;
 }
 
 .section--gray{
     background-color: #f8f8f8;
-}
-
-.section--testimonials_padding {
-    padding-bottom: 80px;
 }
 
 .section--map{
@@ -184,6 +180,10 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 55px 0;
+}
+
+.section--brand {
+    padding: 30px 0;
 }
 
 /*Header*/
@@ -829,6 +829,7 @@ html{
 .testimonials{
     position: relative;
     overflow: hidden;
+    padding: 30px 0;
 }
 
 .testimonials__list{
@@ -916,6 +917,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 40px 0;
 }
 
 /*Logo*/

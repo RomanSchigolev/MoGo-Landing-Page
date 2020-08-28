@@ -8,7 +8,7 @@ const scripts = () => {
   return gulp.src([
     './src/js/main.js',
     './src/js/map.js',
-    './src/js/libraries.js'
+    // './src/js/libraries.js'
   ])
     .pipe(babel({
       presets: ['@babel/env']

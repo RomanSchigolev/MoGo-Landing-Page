@@ -1,1 +1,0 @@
-"use strict";$(document).ready((function(){$("[data-scroll]").on("click",(function(t){t.preventDefault();var o=$(this).data("scroll"),a=$(o).offset().top;$("html, body").animate({scrollTop:a},1e3)}))}));

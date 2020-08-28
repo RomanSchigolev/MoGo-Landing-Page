@@ -1,4 +1,17 @@
 (() => {
+  // Smooth scroll to link
+  const linkList = document.querySelectorAll(".menu__link[href*='#']");
+  for (const linkItem of linkList) {
+    linkItem.addEventListener("click", function (event) {
+      event.preventDefault();
+      const linkHref = this.getAttribute("href");
+      document.querySelector(linkHref).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  }
+
   // Accordion
   const accordion = document.querySelector('.service__accordion');
   const accordionItems = accordion.querySelectorAll('.accordion__item');

@@ -448,7 +448,7 @@
 @media only screen and (max-width : 480px){
 
     .section{
-        padding: 40px 0;
+        margin: 50px 0;
     }
 
     .section__devices{
@@ -517,6 +517,10 @@
 
     .work__item:nth-child(5){
         grid-column: initial;
+    }
+
+    .section__clients {
+        padding: 50px 0;
     }
 
     .blog__date {
