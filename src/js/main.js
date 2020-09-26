@@ -12,6 +12,7 @@
     });
   }
 
+
   // Accordion
   const accordion = document.querySelector('.service__accordion');
   const accordionItems = accordion.querySelectorAll('.accordion__item');
@@ -28,8 +29,8 @@
       item.classList.remove('open');
     });
   }
-
   accordionButtons.forEach(accordion__header => accordion__header.addEventListener('click', toggleAccordion));
+
 
   // Pop-Up Map
   const openModalButtons = document.querySelectorAll('[data-open-modal]');
@@ -37,20 +38,20 @@
   const overlay = document.querySelector('.modal__overlay');
 
   openModalButtons.forEach(button => {
-    button.addEventListener('click', event => {
+    button.addEventListener('click', () => {
       const modal = document.querySelector(button.dataset.openModal);
       openModal(modal);
     });
   });
 
   closeModalButtons.forEach(button => {
-    button.addEventListener('click', event => {
+    button.addEventListener('click', () => {
       const modal = button.closest('.modal');
       closeModal(modal);
     });
   });
 
-  overlay.addEventListener('click', event => {
+  overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active');
     modals.forEach(modal => {
       closeModal(modal);
@@ -85,25 +86,29 @@
     document.onkeydown = null;
   }
 
+
   // Mobile Menu
   const burgerButton = document.querySelector('.burger');
   const menu = document.querySelector('.menu__list');
   const menuLinks = menu.querySelectorAll('.menu__link');
 
-  function mobileMenu() {
-    burgerButton.addEventListener('click', (event) => {
-      menu.classList.toggle('menu__list--active');
-      burgerButton.classList.toggle('burger--active');
-    });
-  }
-
-  mobileMenu();
+  const mobileMenu = () => {
+    menu.classList.toggle('menu__list--active');
+    burgerButton.classList.toggle('burger--active');
+    if (menu.classList.contains("menu__list--active")) {
+      document.querySelector("html").style.overflowY = "hidden";
+    } else {
+      document.querySelector("html").style.overflowY = "auto";
+    }
+  };
+  burgerButton.addEventListener('click', mobileMenu);
 
   menuLinks.forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault();
       burgerButton.classList.remove('burger--active');
       menu.classList.remove('menu__list--active');
+      document.querySelector("html").style.overflowY = "auto";
     });
   });
 
@@ -121,7 +126,6 @@
       document.querySelector('.logo__link').style.fontSize = '2.3vmax';
     }
   }
-
   window.addEventListener('scroll', fixedHeader);
 })();
 

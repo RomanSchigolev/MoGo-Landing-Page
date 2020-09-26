@@ -1218,7 +1218,7 @@ html{
     width: 80vw;
     height: 80vh;
     max-width: 100%;
-    z-index: 10;
+    z-index: 103;
 }
 
 #modal.active{
@@ -1261,6 +1261,7 @@ html{
 .modal__overlay.active{
     opacity: 1;
     pointer-events: all;
+    z-index: 102;
 }
 
 .social__list{
