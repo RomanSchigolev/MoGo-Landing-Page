@@ -626,7 +626,7 @@
     }
 
     .subscribe__item {
-        width: 12%;
+        flex-grow: 1;
         margin-right: 0;
     }
 
@@ -648,14 +648,14 @@
         flex-wrap: wrap;
     }
 
-    .follow--subscribe__proposal {
+    .subscribe__proposal {
         width: 100%;
         margin-bottom: 20px;
         margin-right: 0;
     }
 
     .subscribe__item {
-        width: 12%;
+        flex-grow: 1;
         margin-right: 0;
     }
 
